@@ -7,6 +7,6 @@ namespace HW6.Domain
     public class Book : Entity
     {
         public string TitleName { get; set; }
-        public Author Author { get; set; }
+        public virtual ICollection<BooksAuthors> Authors { get; set; }
     }
 }
