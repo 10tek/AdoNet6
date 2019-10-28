@@ -27,17 +27,17 @@ namespace HW6.UI
 
         public void Action()
         {
-            //FillTables();
+            FillTables();
             var isExit = false;
             while (!isExit)
             {
                 Console.Clear();
-                Console.WriteLine($"1 - Cписок должников");
-                Console.WriteLine($"2 - Список авторов книги №3");
-                Console.WriteLine($"3 - Список книг, которые доступны в данный момент");
-                Console.WriteLine($"4 - Список книг, которые на руках у пользователя №2");
-                Console.WriteLine($"5 - Обнуление задолженности всех должников");
-                Console.WriteLine($"0 - Выход");
+                Console.WriteLine("1 - Cписок должников");
+                Console.WriteLine("2 - Список авторов книги №3");
+                Console.WriteLine("3 - Список книг, которые доступны в данный момент");
+                Console.WriteLine("4 - Список книг, которые на руках у пользователя №2");
+                Console.WriteLine("5 - Обнуление задолженности всех должников");
+                Console.WriteLine("0 - Выход");
                 Console.Write("Выберите пункт меню: ");
                 if (int.TryParse(Console.ReadLine(), out var menu))
                 {
@@ -98,7 +98,8 @@ namespace HW6.UI
         {
             var firstClient = new Client
             {
-                FullName = "Наруто Удзумаки"
+                FullName = "Наруто Удзумаки",
+                IsDebtor = false
             };
             var secondClient = new Client
             {
